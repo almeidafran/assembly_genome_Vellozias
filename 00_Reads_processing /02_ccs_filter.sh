@@ -5,4 +5,4 @@ hifireads=/file_path/ccs.fastq.gz
 #conda activate yahs
 
 ##### adapter filter #####
-hifiadapterfilt.sh -p hifireads -t 16 -o filter_adapter/
+hifiadapterfilt.sh -p $hifireads -t 16 -o filter_adapter/
