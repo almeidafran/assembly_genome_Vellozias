@@ -1,1 +1,6 @@
+#Run hifiasm (Hifi+Hi-C)
+hifiasm -o assembly.asm -t32 --h1 read1.fq.gz --h2 read2.fq.gz HiFi-reads.fq.gz
 
+#To convert .gfa file to .fasta file
+awk '/^S/{print ">"$2"\n"$3}' assembly.hic.hap1.p_ctg.gfa > hap1.fasta
+awk '/^S/{print ">"$2"\n"$3}' assembly.hic.hap2.p_ctg.gfa > hap2.fasta
