@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-set -euo pipefail
+
 
 #############################################
 # Run hifiasm with PacBio HiFi + Hi-C reads
@@ -7,14 +7,14 @@ set -euo pipefail
 
 # Input files
 HIFI="hifi.fq.gz"
-HIC_R1="hic.read1.fq.gz"
-HIC_R2="hic.read2.fq.gz"
+HIC_R1="hic.R1.fq.gz"
+HIC_R2="hic.R2.fq.gz"
 
 # Output prefix
 PREFIX="output.asm"
 
 # Number of threads
-THREADS=24
+THREADS=32
 
 # Run hifiasm
 hifiasm \
