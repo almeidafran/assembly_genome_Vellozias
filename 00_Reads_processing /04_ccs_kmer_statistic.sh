@@ -34,7 +34,9 @@ jellyfish histo \
 #############################################
 # GenomeScope analysis
 #############################################
+genomescope2 --input jellyfish.histo --output . --kmer_length $bestk 
 
+#or
 # Upload the histogram file (hifi_reads.histo)
 # to GenomeScope:
 #
