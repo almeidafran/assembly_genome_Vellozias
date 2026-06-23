@@ -6,7 +6,7 @@
 #############################################
 
 # Input files
-HIFI="hifi.fq.gz"
+HIFI="ccs.filt.fastq.gz"
 HIC_R1="hic.R1.fq.gz"
 HIC_R2="hic.R2.fq.gz"
 
