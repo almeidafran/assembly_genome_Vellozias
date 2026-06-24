@@ -6,3 +6,11 @@ conda activate yahs
 
 ##### simple statistics of FASTA/Q files #####
 seqkit stats -a -j 2 $filt_hifireads > ccs.filt.fastq.stats.txt
+
+
+####Check the quality and size of the reads; if necessary, apply a size and quality filter using filtlong.####
+#https://github.com/rrwick/filtlong
+filtlong \
+    --min_mean_q 20 \
+    --min_length 10000 \
+    $filt_hifireads > hifi.filt.q20.10kb.fastq
