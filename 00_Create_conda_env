@@ -1,0 +1,15 @@
+#Before running any analyses, create the conda environment using the provided environment_yahs.yml file.
+
+#Create the environment
+
+conda env create -f environment_yahs.yml
+
+#Alternatively, if you use Mamba:
+
+mamba env create -f environment_yahs.yml
+
+#Activate the environment
+
+conda activate yahs
+
+#After activating the environment, proceed with the analyses described in the following sections.
